@@ -29,9 +29,22 @@ https://github.com/ViperRNMC/hass-addon
 
 ### &#10003; [InfluxDB2][influxdb2-addon]
 
-This repository contains multiple Home Assistant add-ons. In addition to
-InfluxDB2, it also includes the Rinkhals Timelapse add-on for creating
-timelapses from Rinkhals-based Anycubic 3D printers.
+![Supports amd64 Architecture][influxdb2-amd64-shield]
+![Supports aarch64 Architecture][influxdb2-aarch64-shield]
+![Local Build][influxdb2-local-build]
+
+InfluxDB is an open source time series database optimized for high-write-volume.
+It's useful for recording metrics, sensor data, events, and performing analytics.
+
+Details (from `influxdb2/config.json`):
+
+- **Version:** 2025.8.0
+- **Supported architectures:** aarch64, amd64
+- **Home Assistant requirement:** 2024.2.0
+- **Startup:** services
+- **Ports:** 8086/tcp -> 8086
+- **Options:** reporting, ssl, certfile, keyfile, envvars
+- **Docs:** [:books: InfluxDB2 add-on documentation][influxdb2-doc]
 
 ### &#10003; [Rinkhals Timelapse][rinkhals-addon]
 
@@ -39,25 +52,14 @@ Rinkhals Timelapse creates timelapse videos from snapshots produced by
 Rinkhals-enabled printers or cameras. Configure and enable the add-on via
 the Home Assistant add-on store after adding this repository.
 
+Details (from `rinkhals-timelapse/config.json`):
 
-![Supports amd64 Architecture][influxdb2-amd64-shield]
-![Supports aarch64 Architecture][influxdb2-aarch64-shield]
-![Supports armhf Architecture][influxdb2-armhf-shield]
-![Supports armv7 Architecture][influxdb2-armv7-shield]
-![Supports i386 Architecture][influxdb2-i386-shield]
-
-![HA Ingress Support][influxdb2-ingressSupport]
-![Local Build][influxdb2-local-build]
-
-InfluxDB is an open source time series database optimized for high-write-volume.
-It's useful for recording metrics, sensor data, events,
-and performing analytics. It exposes an HTTP API for client interaction and is
-often used in combination with Grafana to visualize the data.
-
-InfluxDB v2.x \
-If you're after InfluxDB v1.x [see here][influxdbv1]
-
-[:books: InfluxDB2 add-on documentation][influxdb2-doc]
+- **Version:** 1.0.0
+- **Supported architectures:** amd64, armv7, armhf, aarch64
+- **Startup:** services
+- **Ingress:** yes
+- **Maps:** config:rw, media:rw
+- **Options:** printer_ip (str), media_path (str)
 
 
 
