@@ -29,6 +29,17 @@ https://github.com/ViperRNMC/hass-addon
 
 ### &#10003; [InfluxDB2][influxdb2-addon]
 
+This repository contains multiple Home Assistant add-ons. In addition to
+InfluxDB2, it also includes the Rinkhals Timelapse add-on for creating
+timelapses from Rinkhals-based Anycubic 3D printers.
+
+### &#10003; [Rinkhals Timelapse][rinkhals-addon]
+
+Rinkhals Timelapse creates timelapse videos from snapshots produced by
+Rinkhals-enabled printers or cameras. Configure and enable the add-on via
+the Home Assistant add-on store after adding this repository.
+
+
 ![Supports amd64 Architecture][influxdb2-amd64-shield]
 ![Supports aarch64 Architecture][influxdb2-aarch64-shield]
 ![Supports armhf Architecture][influxdb2-armhf-shield]
