@@ -1,0 +1,20 @@
+{
+  "name": "ViperRNMC Add-ons",
+  "url": "https://github.com/ViperRNMC/rinkhals-timelapse",
+  "maintainer": "ViperRNMC",
+  "addons": [
+    {
+      "name": "Rinkhals Timelapse",
+      "slug": "rinkhals-timelapse",
+      "description": "Timelapse creator for Rinkhals-based Anycubic 3D printers",
+      "location": "rinkhals-timelapse/config.json"
+    }
+    ,
+    {
+      "name": "InfluxDB 2",
+      "slug": "influxdb2",
+      "description": "InfluxDB 2 add-on for Home Assistant",
+      "location": "influxdb2/config.yaml"
+    }
+  ]
+}
