@@ -14,7 +14,7 @@
       "name": "InfluxDB 2",
       "slug": "influxdb2",
       "description": "InfluxDB 2 add-on for Home Assistant",
-      "location": "influxdb2/config.yaml"
+      "location": "influxdb2/config.json"
     }
   ]
 }
