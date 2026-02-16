@@ -223,7 +223,6 @@ HTML_TEMPLATE = """
                 </div>
                 <div class="log-area" id="log-box"></div>
                 <form action="/save_config" method="POST" class="settings-form">
-                    <div class="input-group"><label class="label">Printer IP</label><input name="ip" value="{{ip}}"></div>
                     <div class="input-group"><label class="label">Capture Mode</label>
                         <select name="mode">
                             <option value="layer" {% if mode == 'layer' %}selected{% endif %}>Layer Change</option>

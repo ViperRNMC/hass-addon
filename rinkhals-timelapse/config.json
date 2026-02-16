@@ -12,9 +12,7 @@
   "boot": "auto",
   "ingress": true,
   "ingress_port": 0,
-  "ports": {
-    "5005/tcp": 5005
-  },
+  "ports": {},
   "map": ["config:rw", "media:rw"],
   "options": {
     "printer_ip": "10.10.10.99",
