@@ -5,6 +5,8 @@
   "slug": "rinkhals-timelapse",
   "logo": "icon.png",
   "description": "Timelapse creator for Rinkhals-based Anycubic 3D printers",
+  "homeassistant": "2024.2.0",
+  "hassio_api": true,
   "arch": ["amd64", "armv7", "armhf", "aarch64"],
   "startup": "services",
   "boot": "auto",
