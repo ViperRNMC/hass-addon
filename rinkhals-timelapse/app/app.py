@@ -8,9 +8,11 @@ calculates ideal intervals for perfect 15s timelapses.
 
 import requests, time, os, threading, subprocess, json, glob
 from flask import Flask, render_template_string, send_from_directory, request, redirect, jsonify
+from werkzeug.middleware.proxy_fix import ProxyFix
 from collections import deque
 
 app = Flask(__name__)
+app.wsgi_app = ProxyFix(app.wsgi_app, x_for=1, x_proto=1, x_host=1, x_prefix=1)
 # Support overriding paths and printer IP via environment (useful for Home Assistant add-on)
 CONFIG_FILE = os.environ.get("CONFIG_FILE", "config.json")
 ENV_PRINTER = os.environ.get("PRINTER_IP")
