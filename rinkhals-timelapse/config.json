@@ -1,7 +1,7 @@
 {
   "name": "Rinkhals Timelapse",
   "icon": "mdi:camera-timer",
-  "version": "1.0.0",
+  "version": "2026.2.1",
   "slug": "rinkhals-timelapse",
   "logo": "icon.png",
   "description": "Timelapse creator for Rinkhals-based Anycubic 3D printers",
@@ -10,7 +10,9 @@
   "boot": "auto",
   "ingress": true,
   "ingress_port": 0,
-  "ports": {},
+  "ports": {
+    "5005/tcp": 5005
+  },
   "map": ["config:rw", "media:rw"],
   "options": {
     "printer_ip": "10.10.10.99",
